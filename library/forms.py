@@ -8,3 +8,4 @@ class LoginForm(forms.ModelForm):
 		model = Login
 		fields = ('username','password')
 		exclude = [""]
+		

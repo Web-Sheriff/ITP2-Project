@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Books</title>
+    </head>
+    <body>
+    <!-- For working with form -->
+    {% block content %}
+        <h1>SIGNUP_FORM</h1>
+        <form method="signup" class="signup">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-default">Sign up</button>
+        </form>
+    {% endblock %}
+    </body>
+</html>

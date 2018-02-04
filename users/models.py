@@ -1,8 +1,8 @@
 from django.db import models
 
 
-class User(models.Model):
-    login = models.CharField(max_length=100)
+class User(models.Model): #FORM 
+    login = models.EmailField(max_length=100)
     password = models.CharField(max_length=50)
     library_card_number = models.CharField(max_length=100)
     first_name = models.CharField(max_length=255)
