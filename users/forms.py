@@ -15,4 +15,3 @@ class SignUpForm(forms.ModelForm):
 		model = User
 		fields = ('login','password','first_name','second_name','address','phone_number')
 		exclude = [""]
-
